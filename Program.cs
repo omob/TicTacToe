@@ -8,8 +8,6 @@ namespace TicTacToe
  * using OOP
  * 
  */
-
-
     class Program
     {
         const int BOARD_SIZE = 9;
@@ -66,11 +64,11 @@ namespace TicTacToe
 
                         selectedFields.Add(selectedInput);
 
-
                         Console.Clear();
-                        ShowBoard(board);
-                        // check game status
 
+                        ShowBoard(board);
+
+                        // check game status
                         foreach (string player in players)
                         {
                             if (
@@ -174,18 +172,6 @@ ____|____|_____
             Console.WriteLine("Value: {0}, {1}", row, column);
 
             return new int[] { row, column };
-        }
-
-
-        public static string[,] resetBoard()
-        {
-            var board = new string[,] {
-                { "1", "2", "3" },
-                { "4", "5", "6" },
-                { "7", "8", "9" }
-            };
-
-            return board;
         }
 
     }
